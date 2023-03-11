@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en">
+  <head>
+    <meta charset="utf-8">
+    <!-- <link rel="stylesheet" href="search.css"> -->
+    <meta name="description" content="">
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Crafty+Girls&display=swap');
+    </style>
+    
+    <style>
+      input[type=text] {
+          border: 4px solid #b710cc;
+          border-radius: 4px;
+          padding-bottom: 20px;
+          padding: 10px;
+      }
+
+      .searchx-title {
+          text-align: center;
+          font-family: 'Crafty Girls', cursive;
+          font-size: 40px;
+      }
+
+      .searchx-boldspan {
+          font-weight: bold;
+      }
+
+      .searchx-snippet {
+          border-radius: 4px;
+          padding-bottom: 20px;
+          font-family: sans-serif;
+          width: 700px;
+          text-align: left;
+      }
+      
+      .searchx-url {
+          border-radius: 4px;
+          font-family: sans-serif;          
+          padding: 5px;
+          width: 700px;
+          text-align: left;
+          text-decoration: underline;
+          cursor: pointer;
+          color: #AA336A;
+      }
+
+      .searchx-spacer {
+          display: block;
+          padding: 5px;
+          padding-bottom: 20px;
+      }
+
+      .searchx-num-results {
+          border-radius: 4px;
+          width: 600px;
+          text-align: left;
+      }
+
+      body {
+          overflow-y: scroll; /* Show vertical scrollbar */
+      }
+
+    </style>
+    
+  </head>
+  <body>
+    <center>
+      <div class="searchx-title"> Search Calc 1C </div>
+      <form>
+        🔍 <input type="text" id="search-field" name="fname" size="60" onkeypress="return event.keyCode != 13;"><br>
+      </form>
+      <!-- <div id="num-results" class="searchx-num-results">found: 0 result </div> -->
+      <div class="searchx-spacer"></div> 
+      <div id="search-results"> </div>
+    </center>
+    <script src="search.js"></script>
+  </body>
+</html>
